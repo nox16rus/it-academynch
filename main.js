@@ -1,13 +1,24 @@
-var value = "5525"
-var result = 0
-var text = 'fffffffffffff\n ddddddddddd'
-result = 3%2
+var x = document.getElementById('number1')
+var y = document.getElementById('number2')
 
-console.log(result)
+
 
 //объекты для взаимодействия с браузером и их методы
-document.write(text+'<br/>');
-document.write(result)
+document.getElementById('1').addEventListener('click', function() {
+	document.write(+x.value + +y.value);
+})
+
+document.getElementById('2').addEventListener('click', function(){
+	document.write(+x.value - +y.value);
+})
+
+document.getElementById('3').addEventListener('click', function(){
+	document.write(+x.value / +y.value);
+})
+
+document.getElementById('4').addEventListener('click', function(){
+	document.write(+x.value * +y.value);
+})
 
 /*
 terty
